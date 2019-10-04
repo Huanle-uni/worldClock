@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="World Clock"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/sydney"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/sydney" />
+
+                <TextView
+                    android:id="@+id/place1"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sydney,Today"
+                    android:textColor="#FF5722" />
+
+                <TextView
+                    android:id="@+id/sydney_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/auckland"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/auckland"
+                    tools:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/place2"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Auckland, Today 3 hours ahead"
+                    android:textColor="#FF5722"/>
+
+                <TextView
+                    android:id="@+id/auckland_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/london"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/london"
+                    tools:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/place3"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="London, Today 9 hours behind"
+                    android:textColor="#FF5722" />
+
+                <TextView
+                    android:id="@+id/london_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/paris"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/paris"
+                    tools:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/place4"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Paris,Today 8 hours behind"
+                    android:textColor="#FF5722" />
+
+                <TextView
+                    android:id="@+id/paris_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/shanghai"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/shanghai"
+                    tools:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/place5"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shanghai,Today 2 hours behind"
+                    android:textColor="#FF5722" />
+
+                <TextView
+                    android:id="@+id/shanghai_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/gettime12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 12hr Time" />
+
+            <Button
+                android:id="@+id/gettime24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 24hr time" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
